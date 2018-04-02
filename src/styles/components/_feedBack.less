@@ -1,0 +1,79 @@
+.feedBack {
+  padding-bottom: 10px;
+  &-title {
+    padding-top: 210px;
+    padding-bottom: 20px;
+    margin-top: -115px;
+    margin-bottom: 20px;
+    background: #E1D9C9;
+    &-head {
+      &-cont {
+        text-align: center;
+        .textMod(22pt);
+        .titleMod(0.1em);
+        text-transform: uppercase;
+        margin: 0;
+        padding-bottom: 10px;
+      }
+    }
+    &-desc {
+      margin-right: 15%;
+      &-block {
+        float: right;
+        width: 466px;
+        background: url("/img/bgLine-gor.png") no-repeat;
+        background-position: left center;
+        margin: 0;
+        &-cont {
+          margin: 0;
+          margin-left: 100px;
+          text-align: left;
+          background: #e1d9c9;
+          .textMod(@fzTenColSubHed,#6e6555);
+          .titleMod(0);
+          text-transform: uppercase;
+        }
+      }
+      &:after {
+        font-size: 0;
+        display: inline-block;
+        width: 100%;
+        content: "";
+        clear: both;
+      }
+    }
+  }
+}
+
+.backForm {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .feedBack {
+    &-title {
+      &-head {
+        &-cont {
+        }
+      }
+      &-desc {
+        &-block {
+          width: 250px;
+          &-cont {
+            font-size: 7pt;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .feedBack {
+  }
+  .googleFrame {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

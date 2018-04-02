@@ -1,0 +1,57 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  height: 100%;
+  max-width: 1349px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.wrapperPage {
+  min-height: 100%;
+  padding-bottom: @height_footer;
+
+  &-helpWrapp {
+    min-height: 100%;
+  }
+}
+.headerPage {
+  height: 100%;
+}
+
+.contentPage {
+}
+
+.footerPage{
+  height: @height_footer;
+  margin-top: -@height_footer;
+}
+
+@media screen and (max-width: 991px) {
+  .footerPage{
+    height: @height_footer*2;
+    margin-top: -@height_footer*2;
+}
+  .wrapperPage {
+    padding-bottom: @height_footer*2;
+  }
+
+}
