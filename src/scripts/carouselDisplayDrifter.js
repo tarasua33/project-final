@@ -5,7 +5,7 @@ function sliderDrifter() {
 
     $sliderItems.on("click", function () {
 
-        if (event.target.nodeName === "LI") {
+        if (event.target.nodeName === "LI" || "SPAN") {
             var elTarget = event.target;
 
             if (elTarget.getAttribute("class") != "drifter-slider-nav-list-item  selectedItemDrifter") {
@@ -24,10 +24,10 @@ function sliderDrifter() {
                 if (elTarget.textContent === "05") {
                     $(".drifter-slider #slick-slide-control14").click();
                 }
-                if (elTarget.getAttribute("class") === "drifter-slider-nav-list-item drifter-slider-nav-list-item-icon previousBut") {
+                if (elTarget.getAttribute("class") === "glyphicon glyphicon-menu-left") {
                     $(".drifter-slider .slick-prev").click();
                 }
-                if (elTarget.getAttribute("class") === "drifter-slider-nav-list-item drifter-slider-nav-list-item-icon nextBut") {
+                if (elTarget.getAttribute("class") === "glyphicon glyphicon-menu-right") {
                     $(".drifter-slider .slick-next").click();
                 }
                 $(".selectedItemDrifter").toggleClass("selectedItemDrifter");

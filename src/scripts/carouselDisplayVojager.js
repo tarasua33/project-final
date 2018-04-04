@@ -5,7 +5,7 @@ function sliderVojager() {
 
         $sliderItems.on("click", function () {
 
-            if (event.target.nodeName === "LI") {
+            if (event.target.nodeName === "LI"  || "SPAN") {
                 var elTarget = event.target;
 
                 if (elTarget.getAttribute("class") != "voyager-slider-nav-list-item  selectedItemVoyager") {
@@ -24,10 +24,10 @@ function sliderVojager() {
                     if (elTarget.textContent === "05") {
                         $(".voyager-slider #slick-slide-control04").click();
                     }
-                    if (elTarget.getAttribute("class") === "voyager-slider-nav-list-item voyager-slider-nav-list-item-icon previousBut") {
+                    if (elTarget.getAttribute("class") === "glyphicon glyphicon-menu-left") {
                         $(".voyager-slider .slick-prev").click();
                     }
-                    if (elTarget.getAttribute("class") === "voyager-slider-nav-list-item voyager-slider-nav-list-item-icon nextBut") {
+                    if (elTarget.getAttribute("class") === "glyphicon glyphicon-menu-right") {
                         $(".voyager-slider .slick-next").click();
                     }
                     $(".selectedItemVoyager").toggleClass("selectedItemVoyager");

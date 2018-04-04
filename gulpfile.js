@@ -123,6 +123,11 @@ gulp.task("js:datatable", function () {
         .pipe(gulp.dest("dist/js"))
 });
 */
+/*DATATABLE JSON*/
+gulp.task("data:json", function () {
+    return gulp.src("json/*")
+        .pipe(gulp.dest("dist/json"))
+});
 
 
 //**task for clean dist**//
