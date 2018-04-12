@@ -1,3 +1,5 @@
+/**script for change pictures in slider Drifter section**/
+
 sliderDrifter();
 
 function sliderDrifter() {

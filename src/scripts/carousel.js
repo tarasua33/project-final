@@ -1,3 +1,5 @@
+/**script with options for sliders Vojager Drifter Sections**/
+
 $('.center').slick({
     dots: true,
     centerMode: true,

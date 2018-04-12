@@ -1,3 +1,5 @@
+/**script with options VALIDATOR-PLUGIN**/
+
 $(function(){
     $('#feedBackForm').validate({
         rules: {

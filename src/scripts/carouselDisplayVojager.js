@@ -1,3 +1,5 @@
+/**script for change pictures in slider Section Vojager**/
+
 sliderVojager();
 
 function sliderVojager() {

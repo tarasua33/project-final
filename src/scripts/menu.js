@@ -1,3 +1,5 @@
+/**script for OPEN and CLOSE MENU**/
+
 openMenu();
 
 function openMenu() {

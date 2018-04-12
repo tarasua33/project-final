@@ -1,14 +1,19 @@
+/*Styles normalise for ALL text*/
 .textMod(@fzText, @colText:black) {
   font-family: sans-serif;
   text-decoration: none;
   font-size: @fzText;
   color: @colText;
 }
+
+/*Styles headers text*/
 .titleMod(@letterSpacing:0.24em) {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   letter-spacing: @letterSpacing;
 }
+
+/*Styles normalise LIST*/
 .listMod() {
   list-style: none;
   font-size: 0;
@@ -16,6 +21,7 @@
   padding: 0;
 }
 
+/*Styles for basic HOVER styles items in TMPL*/
 .hoverLineMenu() {
   &:before {
     display: inline-block;
@@ -43,13 +49,16 @@
     color: black;
     &::before {
       opacity: 1;
+      transition: 0.3s;
     }
     &::after {
       opacity: 1;
+      transition: 0.3s;
     }
   }
 }
 
+/*pseudo-class for Vertical-Aligh blocks*/
 .verticalAligh() {
   &:before {
     vertical-align: middle;
@@ -60,6 +69,7 @@
   }
 }
 
+/*pseudo-class for imitation multiline text and Text-Aligh center*/
 .textAlC() {
   &:after {
     display: inline-block;
@@ -69,6 +79,7 @@
   }
 }
 
+/*clearFix*/
 .clearFixMy() {
   &:after {
     content: "";
